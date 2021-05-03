@@ -23,11 +23,6 @@ public class DisplayList extends JFrame {
 	static DefaultListModel<String> arr = new DefaultListModel<String>();
 	private JPanel contentPane;
 
-	
-	/**
-	 * Create the frame.
-	 */
-	@SuppressWarnings({ })
 	public DisplayList() {
 		setTitle("Account List");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

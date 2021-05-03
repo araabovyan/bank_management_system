@@ -15,7 +15,6 @@ public static Bank bank=null;
 
 	public static void Read()
 	{
-//		Bank bank =null;
 		FileInputStream fis =null;
 		ObjectInputStream oin=null;
 		try {
@@ -37,7 +36,6 @@ public static Bank bank=null;
 					}
 			
 		}
-		//return bank;
 	}
 	
 	public static void Write()

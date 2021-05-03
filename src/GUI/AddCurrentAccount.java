@@ -16,18 +16,12 @@ import java.awt.SystemColor;
 
 public class AddCurrentAccount extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
 
-	/**
-	 * Create the frame.
-	 */
 	public AddCurrentAccount() {
 		setTitle("Add Current Account");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

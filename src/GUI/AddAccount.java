@@ -13,15 +13,9 @@ import java.awt.SystemColor;
 
 public class AddAccount extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
-	/**
-	 * Create the frame.
-	 */
 	public AddAccount() {
 		setTitle("Add Account");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

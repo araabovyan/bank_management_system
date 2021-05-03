@@ -4,18 +4,13 @@ import Exceptions.MaxWithdraw;
 
 public class SavingsAccount extends BankAccount {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	float rate= .05f;
-	double maxWithLimit;
-//	String type;
+	private float rate= .05f;
+	private double maxWithLimit;
 	
 	public SavingsAccount(String name, double balance,double maxWithLimit) {
 		super(name, balance, 2000);
 		this.maxWithLimit= maxWithLimit;
-//		this.type="Savings Account";
 	}
 	
 	public double getNetBalance()

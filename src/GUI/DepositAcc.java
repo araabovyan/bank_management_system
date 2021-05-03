@@ -20,18 +20,11 @@ import java.awt.SystemColor;
 
 public class DepositAcc extends JFrame implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
 
-	
-	/**
-	 * Create the frame.
-	 */
 	public DepositAcc() {
 		setTitle("Deposit To Account");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -111,11 +104,8 @@ public class DepositAcc extends JFrame implements Serializable {
 				{
 					textField.setText(null);
 					textField_1.setText(null);
-				}
-				
+				}			
 					
-					
-				
 			}
 		});
 		btnDeposit.setBounds(73, 212, 89, 23);

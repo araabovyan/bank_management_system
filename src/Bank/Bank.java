@@ -7,9 +7,7 @@ import Exceptions.MaxBalance;
 import Exceptions.MaxWithdraw;
 
 public class Bank implements Serializable {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	private BankAccount[] accounts= new BankAccount[100];
 	public int addAccount(BankAccount acc)
@@ -53,7 +51,7 @@ public class Bank implements Serializable {
 			{
 				break;
 			}
-			if(getAccounts()[i].acc_num.equals(aacountNum))
+			if(getAccounts()[i].getAcc_num().equals(aacountNum))
 			{
 				return getAccounts()[i];
 			}
@@ -111,32 +109,14 @@ public class Bank implements Serializable {
 	{
 		DefaultListModel<String> list=new DefaultListModel<String>();
 		int i;
-//		String type=null;
 	
 		for(i=0;i<100;i++)
 		{
 			if(getAccounts()[i]==null)
 			{
 				break;
-			}
-//			if(getAccounts()[i].getClass().toString().equals("class Bank.SavingsAccount"))
-//			{
-//				type="Type: Savings Account";
-//			}
-//			
-//			else if(getAccounts()[i].getClass().toString().equals("class Bank.CurrentAccount"))
-//			{
-//				type="Type: Current Account";
-//			}
-//			
-//			else if(getAccounts()[i].getClass().toString().equals("class Bank.StudentAccount"))
-//			{
-//				type="Type: Student Account";
-//			}
-			
+			}			
 			list.addElement(getAccounts()[i].toString());
-			
-			
 		}
 		
 		return list;

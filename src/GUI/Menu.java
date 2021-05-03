@@ -20,17 +20,12 @@ import javax.swing.Icon;
 
 public class Menu extends JFrame {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+//	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
-	/**
-	 * Create the frame.
-	 */
 	public Menu() {
-		setTitle("Banking System");
+		setResizable(false);
+		setTitle("Banking Management System");
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		setBounds(100, 100, 649, 474);
 		contentPane = new JPanel();
@@ -41,30 +36,13 @@ public class Menu extends JFrame {
 		contentPane.setLayout(null);
 		
 		
-		JLabel lblBankingSystem = new JLabel("Banking System");
+		JLabel lblBankingSystem = new JLabel("Banking Management System");
 		lblBankingSystem.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBankingSystem.setFont(new Font("Tahoma", Font.BOLD, 24));
 		lblBankingSystem.setBounds(0, 69, 613, 59);
 		contentPane.add(lblBankingSystem);
 		
 		FileIO.Read();
-		
-//		JButton btnAddAccount = new JButton("Add Account");
-//		btnAddAccount.addActionListener(new ActionListener() {
-//			public void actionPerformed(ActionEvent e) {
-//				if(!GUIForm.addaccount.isVisible())
-//				{
-//					GUIForm.addaccount.setVisible(true);
-//				}
-//				else
-//				{
-//					JOptionPane.showMessageDialog(getComponent(0), "Already Opened", "Warning", 0);
-//				}
-//				
-//			}
-//		});
-//		btnAddAccount.setBounds(217, 162, 194, 40);
-//		contentPane.add(btnAddAccount);
 		
 		JButton btnDepositToAccount = new JButton("Deposit To Account");
 		btnDepositToAccount.addActionListener(new ActionListener() {
@@ -155,7 +133,6 @@ public class Menu extends JFrame {
 		lblNewLabel.setBounds(397, 16, 216, 213);
 		contentPane.add(lblNewLabel);
 		
-		//Image image=GenerateImage.toImage(true);  //this generates an image file
 		ImageIcon icon = new ImageIcon("1.png");
 	}
 }
