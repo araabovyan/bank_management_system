@@ -11,7 +11,6 @@ public class BankAccount implements Serializable {
 	private double balance;
 	private double min_balance;
 	private String acc_num;
-	//String type;
 	
 	public BankAccount(String name, double balance, double min_balance) {
 		this.name = name;

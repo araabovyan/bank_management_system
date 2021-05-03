@@ -5,6 +5,7 @@ import javax.swing.border.EmptyBorder;
 
 import Data.FileIO;
 
+import javax.swing.*;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import java.awt.Font;
@@ -128,11 +129,12 @@ public class Menu extends JFrame {
 		btnNewButton.setBounds(217, 166, 194, 36);
 		contentPane.add(btnNewButton);
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(Menu.class.getResource("/img/1.png")));
-		lblNewLabel.setBounds(397, 16, 216, 213);
-		contentPane.add(lblNewLabel);
-		
-		ImageIcon icon = new ImageIcon("1.png");
+//		JLabel lblNewLabel = new JLabel("New label");
+//		lblNewLabel.setIcon(new ImageIcon(Menu.class.getResource("/img/1.png")));
+//		lblNewLabel.setBounds(5, 5, 216, 213);
+//		lblNewLabel.setHorizontalAlignment(SwingConstants.LEFT);;
+//		contentPane.add(lblNewLabel);
+//		
+//		ImageIcon icon = new ImageIcon("1.png");
 	}
 }

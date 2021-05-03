@@ -9,29 +9,29 @@ import Bank.*;
 
 public class FileIO {
 	
-public static Bank bank=null;
+	public static Bank bank=null;
 
 	public static void Read()
 	{
-		FileInputStream fis =null;
-		ObjectInputStream oin=null;
+		FileInputStream fileInput=null;
+		ObjectInputStream objectStream=null;
 		try {
-			fis =new FileInputStream("data");
-			oin=new ObjectInputStream(fis);
-			FileIO.bank=(Bank)oin.readObject();
+			fileInput =new FileInputStream("data");
+			objectStream = new ObjectInputStream(fileInput);
+			FileIO.bank = (Bank)objectStream.readObject();
 			}
 			
 		catch (Exception en) {
-			FileIO.bank=new Bank();
+			FileIO.bank = new Bank();
 				}
 		
 		finally{
 			try{
-				if(oin!=null) oin.close();
-			if(fis!=null) fis.close();
+				if(objectStream != null) objectStream.close();
+				if(fileInput != null) fileInput.close();
 			}
 			catch (IOException en) {
-					}
+			}
 			
 		}
 	}
@@ -39,15 +39,14 @@ public static Bank bank=null;
 	public static void Write()
 	{
 		try {
-			FileOutputStream fout=new FileOutputStream("data");
-			ObjectOutputStream out=new ObjectOutputStream(fout);
-			out.writeObject(FileIO.bank);
-			out.flush();
-			fout.close();
+				FileOutputStream fileOutput=new FileOutputStream("data");
+				ObjectOutputStream out=new ObjectOutputStream(fileOutput);
+				out.writeObject(FileIO.bank);
+				out.flush();
+				fileOutput.close();
 			}
 			catch(Exception en)
-			{
-				
+			{				
 			}
 	}
 }

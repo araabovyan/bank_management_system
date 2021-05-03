@@ -16,9 +16,6 @@ import java.awt.SystemColor;
 
 public class DisplayList extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	static DefaultListModel<String> arr = new DefaultListModel<String>();
 	private JPanel contentPane;
@@ -49,7 +46,5 @@ public class DisplayList extends JFrame {
 		JList<String> list = new JList<String>(arr);
 		scrollPane.setViewportView(list);
 		
-	
-
 	}
 }
