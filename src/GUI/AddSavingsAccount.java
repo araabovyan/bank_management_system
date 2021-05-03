@@ -15,18 +15,12 @@ import Data.FileIO;
 
 public class AddSavingsAccount extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
 
-	/**
-	 * Create the frame.
-	 */
 	public AddSavingsAccount() {
 		setTitle("Add Savings Account ");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
